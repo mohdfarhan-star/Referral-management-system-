@@ -30,7 +30,7 @@ const Dashboard = () => {
   const fetchCandidates = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:4000/api/v1/candidates/getAllCandidates');
+      const response = await axios.get('https://referral-management-system-r8@j.onrender.com/api/v1/candidates/getAllCandidates');
       if (response.data.success) {
         setCandidates(response.data.data || []);
       } else {
@@ -46,7 +46,7 @@ const Dashboard = () => {
 
   const updateCandidateStatus = async (candidateId, newStatus) => {
     try {
-      const response = await axios.post('http://localhost:4000/api/v1/candidates/updateCandidate', {
+      const response = await axios.post('https://referral-management-system-r8@j.onrender.com/api/v1/candidates/updateCandidate', {
         candidateId,
         updatedStatus: newStatus
       });
