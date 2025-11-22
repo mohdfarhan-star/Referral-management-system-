@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin: "*",
+		origin: "https://portfolio-pvx3.vercel.app/",
 		credentials: true,
 	})
 );
