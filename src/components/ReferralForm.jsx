@@ -104,7 +104,7 @@ const ReferralForm = ({ onCandidateAdded }) => {
       }
 
       const response = await axios.post(
-        'http://localhost:4000/api/v1/candidates/createCandidate',
+        'https://referral-management-system-r80j.onrender.com/api/v1/candidates/createCandidate',
         submitData,
         {
           headers: {
